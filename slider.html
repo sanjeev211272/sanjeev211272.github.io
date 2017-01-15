@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>shopam now</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link type="text/css" rel="stylesheet" href="s1.css">
+<link type="text/css" rel="stylesheet" href="s2.css">
+<link type="text/css" rel="stylesheet" href="s3.css">
+<link type="text/css" rel="stylesheet" href="s4.css">
+<link type="text/css" rel="stylesheet" href="s5.css">
+<link type="text/css" rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
+
+<style>
+.w3-sidenav a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+</head>
+<body class="w3-content" style="max-width:1200px">
+
+<!-- Sidenav/menu -->
+<nav class="w3-sidenav w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidenav">
+  <div class="w3-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-closebtn w3-hover-text-red"></i>
+    <h3 class="w3-wide"><b>shopam</b></h3>
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">  
+<a href="slider.html">Trial Room</a>   
+<a href="index.html">Shirts</a>
+    <a href="tshirts.html">tshirts</a>
+<a href="jeans.html">jeans</a>    
+    <a href="#">Jackets</a>
+    <a href="#">Gymwear</a>
+    <a href="#">Blazers</a>
+    <a href="#">Shoes</a>
+  </div>
+  <a href="#footer" class="w3-padding">Contact</a> 
+  <a href="javascript:void(0)" class="w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
+  <a href="#footer"  class="w3-padding">Subscribe</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding-24">
+  <span class="w3-left w3-wide">LOGO</span>
+  <a href="javascript:void(0)" class="w3-right w3-opennav" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">T-shirts</p>
+    <p class="w3-right">
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p>
+  </header>
+
+  <!-- Image header -->
+ <form>
+<ul class="slides">
+    <input type="radio" name="radio-btn" id="img-1" checked />
+    <li class="slide-container">
+		<div class="slide">
+			<img src="a100.jpg" />
+        </div>
+		<div class="nav">
+			<label for="img-6" class="prev">&#x2039;</label>
+			<label for="img-2" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-2" />
+    <li class="slide-container">
+        <div class="slide">
+          <img src="102.jpg" />
+        </div>
+		<div class="nav">
+			<label for="img-1" class="prev">&#x2039;</label>
+			<label for="img-3" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-3" />
+    <li class="slide-container">
+        <div class="slide">
+          <img src="a101.jpg" />
+        </div>
+		<div class="nav">
+			<label for="img-2" class="prev">&#x2039;</label>
+			<label for="img-4" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-4" />
+    <li class="slide-container">
+        <div class="slide">
+          <img src="a103.jpg" />
+        </div>
+		<div class="nav">
+			<label for="img-3" class="prev">&#x2039;</label>
+			<label for="img-5" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-5" />
+    <li class="slide-container">
+        <div class="slide">
+          <img src="105.jpg" />
+        </div>
+		<div class="nav">
+			<label for="img-4" class="prev">&#x2039;</label>
+			<label for="img-6" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-6" />
+    <li class="slide-container">
+        <div class="slide">
+          <img src="a104.jpg" />
+        </div>
+		<div class="nav">
+			<label for="img-5" class="prev">&#x2039;</label>
+			<label for="img-1" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <li class="nav-dots">
+      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+      <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+      <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+      <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+      <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+      <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+    </li>
+</ul>
+</form>
+<form>
+
+
+<ul class="slides2">
+    <input type="radio" name="radio-btn" id="i1" checked />
+    <li class="slide-container2">
+		<div class="slide2">
+			<img src="121.jpg" />
+        </div>
+		<div class="nav2">
+			<label for="i6" class="prev">&#x2039;</label>
+			<label for="i2" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="i2" />
+    <li class="slide-container2">
+        <div class="slide2">
+          <img src="122.jpg" />
+        </div>
+		<div class="nav2">
+			<label for="i1" class="prev">&#x2039;</label>
+			<label for="i3" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="i3" />
+    <li class="slide-container2">
+        <div class="slide2">
+          <img src="126.jpg" />
+        </div>
+		<div class="nav2">
+			<label for="i2" class="prev">&#x2039;</label>
+			<label for="i4" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="i4" />
+    <li class="slide-container2">
+        <div class="slide2">
+          <img src="1002.jpg" />
+        </div>
+		<div class="nav2">
+			<label for="i3" class="prev">&#x2039;</label>
+			<label for="i5" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="i5" />
+    <li class="slide-container2">
+        <div class="slide2">
+          <img src="1001.jpg" />
+        </div>
+		<div class="nav2">
+			<label for="i4" class="prev">&#x2039;</label>
+			<label for="i6" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="i6" />
+    <li class="slide-container2">
+        <div class="slide2">
+          <img src="130.jpg" />
+        </div>
+		<div class="nav2">
+			<label for="i5" class="prev">&#x2039;</label>
+			<label for="i1" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <li class="nav-dots2">
+      <label for="i1" class="nav-dot2" id="i-dot-1"></label>
+      <label for="i2" class="nav-dot2" id="i-dot-2"></label>
+      <label for="i3" class="nav-dot2" id="i-dot-3"></label>
+      <label for="i4" class="nav-dot2" id="i-dot-4"></label>
+      <label for="i5" class="nav-dot2" id="i-dot-5"></label>
+      <label for="i6" class="nav-dot2" id="i-dot-6"></label>
+    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+</form>
+
+  <!-- Subscribe section -->
+  <div class="w3-container w3-black w3-padding-32">
+    <h1>Subscribe</h1>
+    <p>To get special offers and VIP treatment:</p>
+    <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+    <button type="button" class="w3-btn w3-padding w3-red w3-margin-bottom">Subscribe</button>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4>Contact</h4>
+        <p>Questions? Go ahead.</p>
+        <form action="form.asp" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
+          <button type="submit" class="w3-btn-block w3-padding w3-black">Send</button>
+        </form>
+      </div>
+
+      <div class="w3-col s4">
+        <h4>About</h4>
+        <p><a href="#">About us</a></p>
+        
+        <p><a href="#">Support</a></p>
+        <p><a href="#">Find store</a></p>
+        
+        
+        
+        
+        <p><a href="#">Help</a></p>
+      </div>
+
+      <div class="w3-col s4 w3-justify">
+          <h4>Owner</h4>
+        <p> Shopam</p>
+        <p> 8586840587</p>
+        
+        <h4>We accept</h4>
+        <p> Amex</p>
+        <p> Credit Card</p>
+<p> paytm</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24">For making ur website, contact </br><a href="https://www.facebook.com/profile.php?id=100001927088262" title="W3.CSS" target="_blank" class="w3-hover-opacity">abhishek gupta</a></div>
+
+  <!-- End page content -->
+</div>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom w3-padding-jumbo">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-closebtn w3-xlarge w3-hover-text-grey w3-margin"></i>
+      <h2 class="w3-wide">NEWSLETTER</h2>
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-btn w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Script to open and close sidenav
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
